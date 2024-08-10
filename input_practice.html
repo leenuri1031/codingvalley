@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>만족도 조사 만들기</title>
+</head>
+<body>
+  <h1>만족도 조사</h1>
+  <form action="/backend" method="post">
+    <label for="gender">성별</label>
+    <input type="radio" name="gender" value="남성">남성
+    <input type="radio" name="gender" value="여성">여성
+    <hr>
+
+    <select name="age" id="age">
+      <optgroup label="age">
+        <option value="">10대</option>
+        <option value="">20대</option>
+        <option value="">30대</option>
+        <option value="">40대</option>
+        <option value="">50대</option>
+      </optgroup>
+    </select>
+    <hr>
+
+    <input type="file">
+    <hr>
+
+    <label for="기타의견">기타의견</label>
+    <input type="text">
+    <input type="submit">
+  </form>
+</body>
+</html>
